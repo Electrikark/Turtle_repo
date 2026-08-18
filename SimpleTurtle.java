@@ -37,10 +37,10 @@ public class SimpleTurtle
   private Picture picture = null;
   
   /** width of turtle in pixels */
-  private int width = 15;
+  private int width = 20;
   
   /** height of turtle in pixels */
-  private int height = 18;
+  private int height = 20;
   
   /** current location in x (center) */
   private int xPos = 0;
@@ -675,7 +675,37 @@ public class SimpleTurtle
     //  draw the pen
     pen.paintComponent(g);
   }
-  
+  public void polygon(int sides, int size) {
+    for(int i = 0; i<sides; i++){
+      this.forward(size);
+      this.turn(360.0/sides);
+
+    }
+
+  }
+  public void circle(int radius){
+    for (int i = 0; i<(360); i++){
+      this.turn(1.0);
+      this.forward(radius);
+    }
+  }
+  public void star(int size){
+    this.turn(25);
+
+    for (int i = 0;i<6; i++){
+      this.forward(size);
+      this.turn(137.5);
+    }
+  }
+  public void exp(int size){
+    this.turn(25);
+    for (int i = 0; i<2; i++){
+      this.forward(size);
+      this.turn(135);
+    }
+
+  }
+
   /**
    * Method to draw the information string
    * @param g the graphics context

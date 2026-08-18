@@ -12,16 +12,27 @@ public class Main {
     Turtle Naman = new Turtle(400,500,world2);
     Turtle pranil = new Turtle(world3);
     // // Add your code here
-    yertle.forward();
-    yertle.turnRight();
-    yertle.forward();
+    // yertle.forward();
+    // yertle.turnRight();
+    // yertle.forward();
 
-    Naman.forward();
-    Naman.turnRight();
-    Naman.forward();
-    pranil.forward();
-    pranil.turnRight();
-    pranil.forward();
+    // Naman.forward();
+    // Naman.turnRight();
+    // Naman.forward();
+    // pranil.forward();
+    // pranil.turnRight();
+    // pranil.forward();
+    // Naman.turnLeft();
+    // Naman.turnToFace(yertle);
+    yertle.setShellColor(Color.magenta);
+    // pranil.getShellColor(naman);
+    System.out.println(yertle.getDistance(0,0));
+    Naman.polygon(50,50);
+    // Naman.polygon(360, 05);
+    Naman.circle(5);
+    // Naman.circle(50);
+    pranil.star(50);
+    yertle.exp(100);
     // //world.setVisible(true);
 
     // World world2 = new World(true);
